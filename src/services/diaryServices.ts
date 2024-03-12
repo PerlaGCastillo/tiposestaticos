@@ -1,7 +1,8 @@
 import { DiaryEntry } from '../types'
-import diaryData from './diaries'
+import diaryData from './diaries.json'
 
-const diaries: Array<DiaryEntry> = diaryData
-export const getEntries = () => diaries
+const diaries: DiaryEntry[] = diaryData as DiaryEntry[]
 
-export const addEntry = () => null
+export const getEntries = (): DiaryEntry[] => diaries
+
+export const addEntry = (): undefined => undefined

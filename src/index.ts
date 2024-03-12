@@ -18,3 +18,4 @@ app.use('/api/diaries', diaryRouter)
 app.listen(PORT, () => {
     console.log(`listening on ${PORT}`)
 })
+
