@@ -1,6 +1,4 @@
-export type Weather = 'sunny' | 'rainy' | 'cloudy' | 'windy' | 'stormy'
-export type Visibility = 'great' | 'good' | 'ok' | 'poor'
-
+import { Weather, Visibility } from "./enums"
 export interface DiaryEntry {
     id: number
     date: string
@@ -12,3 +10,4 @@ export interface DiaryEntry {
 // export type NonSensitiveInfoDiaryEntry = Pick<DiaryEntry, 'id' | 'date' | 'weather' | 'visibility'>
 
 export type NonSensitiveInfo = Omit<DiaryEntry, 'comment'>
+export type NewDiaryEntry = Omit<DiaryEntry, 'id'>

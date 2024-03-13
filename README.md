@@ -21,7 +21,7 @@ npm init -y
 npm i typescript @types/express ts-standard -D
 npm run tsc -- --init
 npm install express -E
-
+npm install @types/node
 levantar y compilar, ejecutar cambios 
 $ npm i ts-node-dev -D
 
