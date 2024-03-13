@@ -1,5 +1,6 @@
 import { DiaryEntry } from "../types"
-const diaryEntries: Array<DiaryEntry> =
+
+const diaryEntries: DiaryEntry[] =
 [
     {
         "id":1,
